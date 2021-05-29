@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm</title>
+    <link rel="stylesheet" href="../CSS/Css/trangchu.css">
+    <link rel="stylesheet" href="../CSS/Css/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/Css/sanpham.css">
+    <link rel="stylesheet" href="../CSS/ICON/Font_icon/themify-icons/themify-icons.css">
+    <script src="../JS/trangchu.js"></script>
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/poper-2.9.2.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="main" >
+        <!-- Header -->
+        <div id="header" >
+            <div class="img-logo">
+               <a href="../HTML/index.html"><img  src="../CSS/IMG/Petmart.png" alt="logo" title="logo cong ty"></a> 
+            </div>
+
+            <div class="form-search ">
+                <form class="form-inline" action="#">
+                    <input class="form-control" id="search" type="search" placeholder="Nhâp thông tin tìm kiếm">
+                    <input class="btn ml-2 " type="button" value="Tìm">
+                </form>
+            </div>
+            
+        </div>
+        <!-- Navigation -->
+        <div id="main-nav">
+            <ul class="nav ">
+                <li class="nav-item"><div class="sub-bar"></div><a href="./index.html" class="nav-link text-white ">Trang chủ</a></li>
+                <li class="nav-item dropdown"><a href="./sanPham.html" class="nav-link text-white ">Sản phẩm</a>
+                    <div class="dropdown-menu">
+                        <a href="..//HTML/sanPhamDog.html" class="dropdown-item">Dog</a>
+                        <a href="./sp-Windows.html" class="dropdown-item">Cat</a>
+                        <a href="./sp-Phukien.html" class="dropdown-item">Dịch vụ</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="./gioiThieu.html" class="nav-link text-white ">Giới thiệu</a></li>
+                <li class="nav-item"><a href="./hoTro.html" class="nav-link text-white ">Hỗ trợ</a></li>
+            </ul>
+            <!-- respon -->
+            <div class="sub-menu">
+                <input type="checkbox" name="check" class="chk" id="chk-menu" >
+                <label for="chk-menu"><img class="sub-bar" src="../CSS/IMG/IMG-Trang-chu/Picture3.png" alt="sub-menu" ></label>
+                
+                <label for="chk-menu" class="bg_gray"></label>
+                <div class="subnav">
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><div class="sub-bar"></div><a href="./index.html" class="nav-link text-white ">Trang chủ </a></li>
+                        <li class="nav-item dropdown"><a href="./sanPham.html" class="nav-link text-white ">Sản phẩm</a>
+                            <div class="dropdown-menu">
+                                <a href="..//HTML/sanPhamDog.html" class="dropdown-item">Dog</a>
+                                <a href="./sp-Windows.html" class="dropdown-item">Cat</a>
+                                <a href="./sp-Phukien.html" class="dropdown-item">Dịch vụ</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="./gioiThieu.html" class="nav-link text-white ">Giới thiệu</a></li>
+                        <li class="nav-item"><a href="./hoTro.html" class="nav-link text-white ">Hỗ trợ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- dang nhap dang ki -->
+            <div class="log-in-out">
+                <form class="form-inline" action="#">
+                    <input class="btn mr-2 text-white" type="button" value="Đăng nhập/Đăng ký" data-toggle="modal" data-target="#modalDangnhap" >
+                    
+                </form>
+                
+                
+            </div>
+        </div>
+        <!-- Modal đăng nhap -->
+        <div id="modalDangnhap" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <ul class="nav nav-tabs bg-dark" role="tablist">
+                        <li class="nav-item text-center"> 
+                            <a href="#" class="nav-link active " data-toggle="tab" data-target="#dangnhap">Đăng nhập</a></li>
+                        <li class="nav-item text-center"><a href="#" class="nav-link " data-toggle="tab" data-target="#dangki">Dăng ký</a></li>
+                    </ul>
+            <!-- Tab dang nhap/dang ki -->
+                    <div class="tab-content">
+                        <div id="dangnhap" class="tab-pane active ">
+                            <div class="form-input">
+                               
+                            <input type="text" class="form-control mt-5 " placeholder="Nhập email"> <span id="spMail" class="text-danger">*</span>
+                            
+                            <input type="password" class="form-control mt-5" placeholder="Nhập mật khẩu"><span id="spPass" class="text-danger">*</span>
+                            </div>
+                            <div class="btndangnhap text-center">
+                                <input id="dangnhap" type="submit" class="btn btn-dark mt-5 mb-5" value="Đăng nhập">
+                                <input type="button" class="btn btn-dark ml-3" value="Huỷ" data-dismiss="modal" &times;>
+                            </div>
+                            
+                        </div>
+                        <!-- tab pane dang ky -->
+                        <div id="dangki" class="tab-pane">
+                            <div class="form-input">
+                                <input type="text" class="form-control mt-5 " placeholder="Nhập email"> <span id="spMail" class="text-danger">*</span>
+                            
+                                <input type="password" class="form-control mt-2" placeholder="Nhập mật khẩu"><span id="spPass" class="text-danger">*</span>
+                                <input type="password" class="form-control mt-2" placeholder="Nhập lại mật khẩu"><span id="spRePass" class="text-danger">*</span>
+                                <input type="text" class="form-control mt-2" placeholder="Nhập họ tên"><span id="spName" class="text-danger">*</span>
+                                <input type="date" class="form-control mt-2" placeholder="Nhập ngày tháng năm sinh"><span id="spDate" class="text-danger">*</span>
+                                <div class="form-inine mt-2">
+                                    <input type="radio" name="Gioi tinh" id="rdNam" checked> <label for="rdNam"> Nam</label>
+                                    <input type="radio" name="Gioi tinh" id="rdNu"> <label for="rdNu"> Nữ</label>
+                                </div>
+                                <input type="text" class="form-control mt-2" placeholder="Nhập số điện thoại"><span id="spPhone" class="text-danger">*</span>
+
+                            </div>  
+                                <div class="btndangnhap text-center">
+                                    <input id="dangky" type="submit" class="btn btn-dark mt-5 mb-5" value="Đăng ký">
+                                    <input type="button" class="btn btn-dark ml-3" value="Huỷ" data-dismiss="modal" &times;>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slider -->
+        
+       
+        <!-- content -->
+        <div id="content">
+            <div class="map-link ">
+                <a href="./index.html">Trang chủ /</a> 
+                <a href="./sanPham.html"> Sản phẩm /</a>
+            </div> 
+            <!-- Loai sp -->
+            <div class="sp-loaisp">
+                <div class="sp-loaisp-1 text-center">
+                        <a href="../HTML/sanPhamDog.html"><img src="..//CSS/IMG/IMG-San-Pham/phoc_soc_0.jpg" alt="phocsoc"></a>
+                        <div><a href="..//HTML/sanPhamDog.html">Dog</a></div>
+                </div>
+                <div class="sp-loaisp-1 text-center" >
+                    <a href="./sp-Windows.html"><img src="../CSS/IMG/IMG-San-Pham/meo-anh-long-ngan.jpg" alt="longngan"></a>
+                    <div><a href="./sp-Windows.html">Cat</a></div>
+                </div>
+                <div class="sp-loaisp-1 text-center" >
+                    <a href="./sp-Phukien.html"><img src="..//CSS/IMG/IMG-San-Pham/nail.jpg" alt="phu kien"  ></a>
+                    <div><a href="./sp-Phukien.html">Dịch vụ</a></div>
+                </div>
+            </div>
+            <!-- SP dog-->
+            <div class="sp-loaisp-tittle text-center">
+                <a href="..//HTML/sanPhamDog.html">Dog</a>
+            </div>
+            <div class="motasp">
+                <div class="motasp-img ">
+                    <a href="..//HTML/alaska.html">
+                        <img src="..//CSS/IMG/IMG-San-Pham/unnamed.jpg" alt="alaska">
+                    </a>
+                </div>
+                <div class="motasp-chitiet text-center">
+                        <a href="..//HTML/alaska.html">
+                            <h5>Alaska 3 tháng tuổi thuần chủng</h3>
+                        </a>
+                        <p>Giấy chứng minh nguồn gốc, tim chủng đầy đủ.</p>
+                        <p></p>
+                        <h4>Giá: 6-7.000.000 đ</h2>
+                </div>
+            </div>
+
+            <!-- SP Cat -->
+            <div class="sp-loaisp-tittle text-center">
+                <a href="./sp-Windows.html">Cat</a>
+            </div>
+            <div class="motasp">
+                <div class="motasp-img ">
+                    <img src="..//CSS/IMG/IMG-San-Pham/meo-birman-gia-bao-nhieu.jpg" alt="birman">
+                </div>
+                <div class="motasp-chitiet text-center">
+                        <h5>Mèo Birman 3 tháng tuổi </h3>
+                        <p>Giấy chứng minh nguồn gốc, tim chủng đầy đủ</p>
+                        <p>Mèo thần miến điện Birman là một giống mèo với một cái đầu tròn, một cái mặt béo (nhưng không béo như aln), đôi mắt hình oval màu xanh biển hút hồn, đôi tai vểnh cao tạo nên tổng thể một con mèo trông giống mèo xiêm nhưng lại mập hơn một chút, rất dễ thương.</p>
+                        <h4>Giá: 20-25.000.000 đ</h2>
+                </div>
+            </div>
+
+            <!-- SP Dich vu -->
+            <div class="sp-loaisp-tittle text-center">
+                <a href="./sp-Phukien.html">Dịch vụ</a>
+            </div>
+            <div class="motasp">
+                <div class="motasp-img ">
+                    <img src="..//CSS/IMG/IMG-San-Pham/spa.jpg" alt="spa">
+                </div>
+                <div class="motasp-chitiet text-center">
+                        <h5>Petmart Spa</h3>
+                        <p>Với tay nghề nhân viên lâu năm kinh nghiệm. Dịch vụ chăm sóc khách hàng tận tình chu đáo. Chúng tôi sẽ giúp người bạn thân các bạnc có được trạng thái thoải mái nhất.</p>
+                        <input class="btn " type="button" value="Xem chi tiết">
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="f-gioithieu">
+                <p>Tại đây, chúng tôi cung cấp cho bạn người bạn đồng hành tốt nhất cũng như dịch vụ chăm sóc cho người bạn của bạn.  </p>
+            </div>
+            <div class="f-diachi">
+               <span>Địa chỉ:</span>  53 Thống Nhất P11 Gò Vấp Tp.HCM. <br>
+                <span>Hotline: </span>0777618759
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+.content-pet{
+    position: relative;
+    height: 600px;
+}
+.left{
+    padding-left: 10px;
+    position: absolute;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.left .dog-sli{
+    height: 500px;
+    width: 650px;
+}
+.dog-sli .image{
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    padding-top: 0%;
+}
+.right{
+    padding-left: 10px;
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+.text-danger{
+    font-size: 200%;
+}
